@@ -1,0 +1,5 @@
+-   ja temos alocacao de memoria e o código rodou para matrizes de 100x100;
+-   de 1000x1000 o pc chorou;
+-   implementar um funcao de troca para u e u_new;
+-   trocar de gaussSiedel para GradienteConjugado;
+-   implementar headers;
