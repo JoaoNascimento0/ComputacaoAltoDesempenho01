@@ -1,6 +1,7 @@
 // segundo rascunho para projeto de diffusion equation 2d.
 // data: 20/11
 
+//gostaria de testar o editor m
 /*  -----   du/dt - D*(d²u/d²x + d²u/d²y) = f(x,y,t)   -----  */
 
 // Bibliotecas, possiveis .h entrarao na jogada.
