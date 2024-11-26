@@ -1,9 +1,9 @@
 CC = gcc
-CFLAGS = -O4 -g
+CFLAGS = -O0 -g
 LIBS = -lm
 SRCS = array.c metodo.c main.c
 OBJ = main.o metodo.o array.o
-TARGET = teste04
+TARGET = teste00
 
 # Regra principal para compilar o programa
 $(TARGET): $(OBJ)
