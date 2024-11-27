@@ -1,0 +1,12 @@
+.
+├── array.c
+├── array.h
+├── main.c
+├── Makefile
+├── metodo.c
+├── metodo.h
+├── profile_o0.txt
+├── README5.md
+└── solucaoAnalitica100x100x0.3.pdf                                                 .
+
+1 directory, 11 files

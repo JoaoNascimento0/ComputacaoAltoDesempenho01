@@ -8,9 +8,9 @@
 #include "metodo.h"
 
 #define D  1.0       //coeficiente de difusão
-#define nx 300       //numero de pontos em x
-#define ny 300       //numero de pontos em y
-#define nt 300       //numero de passos de tempo
+#define nx 100       //numero de pontos em x
+#define ny 100       //numero de pontos em y
+#define nt 100       //numero de passos de tempo
 #define Lx 1.0       //dimensao do dominio em x
 #define Ly 1.0       //dimensao do dominio em y
 #define Lt 0.3       //tempo máximo
