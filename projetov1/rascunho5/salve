@@ -1,0 +1,40 @@
+CC = gcc
+CFLAGS = -O0 -g -pg
+LIBS = -lm
+SRCS = array.c metodo.c main.c
+OBJ = main.o metodo.o array.o
+TARGET = teste00
+
+# ------------------------------------------- #
+SRCS2 = array.c solucaoAnalitica.c
+OBJ2 = solucaoAnalitica.o array.o
+TARGET2 = solucaoAnalitica
+
+# Regra principal para compilar o programa
+$(TARGET): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(TARGET) $(LIBS)
+
+# Regras para os arquivos objeto
+main.o: main.c metodo.h array.h
+	$(CC) $(CFLAGS) -c main.c
+
+metodo.o: metodo.c metodo.h
+	$(CC) $(CFLAGS) -c metodo.c
+
+array.o: array.c array.h
+	$(CC) $(CFLAGS) -c array.c
+
+# Regra para compilar o resultadoAnalitico.c
+#$(TARGET2): $(OBJ2)
+
+# Regras para os arquivos objeto
+solucaoAnalitica.o: array.h
+	$(CC) $(CFLAGS) -c solucaoAnalitica.c
+
+# Regra de limpeza
+clean:
+	@rm -f $(OBJ) $(TARGET)
+	@rm -f $(OBJ2) $(TARGET2)
+
+
+

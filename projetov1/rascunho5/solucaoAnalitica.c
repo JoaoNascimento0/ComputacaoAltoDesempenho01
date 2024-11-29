@@ -48,13 +48,14 @@ int main(){
     double* x = iniciaVetor(dx, nx);
     double* y = iniciaVetor(dy, ny);
 
-//preenche a matriz de solucao analitica u(x,y,Lt), tempo final.
+//preenche a matriz de solucao analitica u(x,y,Lt), tempo final.                    .
     double **analitica = solucao(x, y, nx, ny, Lt);
 
 //salva a matriz em um arquivo '.dat'.
     saveMatriz(analitica, nx, ny, "solucaoAnalitica.dat");
 
 //libera memoria previamente alocada.
+    puts("\nMatriz salva em solucaoAnalitica.dat\n");
     liberaMatriz(analitica, nx);
     free(x);
     free(y);
